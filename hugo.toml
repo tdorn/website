@@ -1,0 +1,76 @@
+baseURL = "localhost"
+locale  = "en-us"
+title   = "tdorn's musings"
+theme   =  "hello-4s3ti"
+copyright = "All Rights Reserved" 
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  paginate        = 10
+
+  EnableThemeToggle = false
+  EnableSharingButtons = true
+  backgroundImage = "static/coolapso.webp"
+  backgroundEffects = true
+  showPosts = true
+  tags = true
+  ReadMoreText = true
+  fontAwesome = { KitURL = "https://kit.fontawesome.com/0ed5cec925.js" }
+  ShowReadingTime = true
+  LastModDisplay = true
+  logo = { logoText = "tylerdorn.com", logoCursorColor = "#ffffff" }
+  footer = { showVersion = true, socialIcons = true, author = false, rss = true, trademark = true, copyright = true, bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"] }
+
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/tdorno"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "tdorn's musings"
+    subtitle = ""
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "tdorn's musings"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "technology"
+    name       = "Technology"
+    url        = "/technology"
+    weight     = 1
+  
+  [[menu.main]]
+    identifier = "management"
+    name       = "Management"
+    url        = "/management"
+    weight     = 2
+
+  [[menu.main]]
+    identifier = "lifestyle"
+    name       = "Lifestyle"
+    url        = "/lifestyle"
+    weight      = 3
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+  
