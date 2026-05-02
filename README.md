@@ -1,3 +1,6 @@
 Tyler's blog. WIP but soon to be available at tylerdorn.com
 
-hi fred
+See https://tdorn.github.io/website/ for now
+
+(hi fred)
+
